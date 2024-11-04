@@ -1,4 +1,4 @@
-# Proyecto de Instalación de Zabbix (Server, Agente e Integración con Telegram)
+# Instalación de Zabbix (Server y Agente) e Integración con Telegram.
 
 Este proyecto proporciona los scripts necesarios para instalar y configurar un servidor Zabbix 7.0 en un sistema **Debian Bookworm**, así como para instalar el agente Zabbix en un host a monitorizar. Además, se incluye un script para integrar Zabbix con Telegram para el envío de notificaciones.
 
