@@ -27,16 +27,17 @@ Este proyecto proporciona los scripts necesarios para instalar y configurar un s
    install_zabbix_agent.sh
    ```
 
-4. **Coloca el script de Telegram** en la ruta de alertas de Zabbix:
+4. **Coloca el script de Telegram** en la ruta de alertas de Zabbix y otórgale permiso de ejecución:
 
    ```bash
-   sudo mkdir -p /usr/lib/zabbix/alertscripts/telegram.py
+   sudo mkdir -p /usr/lib/zabbix/alertscripts/
    sudo cp telegram.py /usr/lib/zabbix/alertscripts/telegram.py
+   chmod +x /usr/lib/zabbix/alertscripts/telegram.py
    ```
 
-   El script `telegram.py` debe colocarse en la ruta `/lib/zabbix/alerts/` para que Zabbix pueda utilizarlo para enviar notificaciones a través de Telegram.
+   El script `telegram.py` debe colocarse en la ruta `/usr/lib/zabbix/alertscripts/` para que Zabbix pueda utilizarlo para enviar notificaciones a través de Telegram.
 
-5. **Ejecuta el script de Telegram** con los parámetros necesarios:
+5. **Ejecuta el script de Telegram** con los parámetros necesarios para realizar una prueba:
 
    ```bash
    # Prueba de envío de notificaciones a Telegram
@@ -48,6 +49,5 @@ Este proyecto proporciona los scripts necesarios para instalar y configurar un s
 - Para acceder a la interfaz web de Zabbix, visita `http://<IP_DEL_SERVIDOR>/zabbix` en tu navegador. Usa las credenciales predeterminadas:
   - **Usuario**: Admin
   - **Contraseña**: zabbix
-- Configura los parámetros de conexión del servidor Zabbix en el script `telegram.py` según tus necesidades.
 - Ajusta los valores de las variables de configuración en los scripts según tu entorno.
 
