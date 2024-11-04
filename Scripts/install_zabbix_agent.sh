@@ -7,8 +7,8 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Variables de configuración
-ZABBIX_SERVER_IP=""         # IP del servidor Zabbix
-AGENT_HOSTNAME=""           # Nombre del host a monitorizar
+ZABBIX_SERVER_IP="IP DEL SERVIDOR ZABBIX"
+AGENT_HOSTNAME="HOSTNAME MAQUINA A MONITORIZAR"           
 
 # Actualizar el sistema
 apt update && apt upgrade -y
